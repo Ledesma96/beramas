@@ -10,7 +10,7 @@ const Footer = () => {
             <Link className='footer_navigation_link' href='/products' aria-label='Nuestros productos'>PRODUCTOS</Link>
             <Link className='footer_navigation_link' href='/contact' aria-label='Mandanos un mensaje'>CONTACTO</Link>
             <Link className='footer_navigation_link' href='/aboutus' aria-label='sobre nosotros'>NOSOTROS</Link>
-            <Link className='footer_navigation_link' href='/faqs' aria-label='Respuestas a tus preguntas'>FAQ'S</Link>
+            <Link className='footer_navigation_link' href='/faqs' aria-label='Respuestas a tus preguntas'>FAQ&apos;S</Link>
         </div>
         <div className='footer_contact-us'>
             <h3 className='footer_contact-us_h6'>Contactanos</h3>

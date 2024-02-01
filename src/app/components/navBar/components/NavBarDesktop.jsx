@@ -34,7 +34,7 @@ const NavBarDesktop = () => {
         </div>
         <Link className={`navBar-desktop_section_link ${pathName == '/contact' ? 'active' : ''}`} href='/contact' aria-label='Contactanos'>CONTACTO</Link>
         <Link className={`navBar-desktop_section_link ${pathName == '/aboutus' ? 'active' : ''}`} href='/aboutus' aria-label='nosotros'>NOSOTROS</Link>
-        <Link className={`navBar-desktop_section_link ${pathName == '/faqs' ? 'active' : ''}`} href='/faqs' aria-label='respuestas'>FAQ'S</Link>
+        <Link className={`navBar-desktop_section_link ${pathName == '/faqs' ? 'active' : ''}`} href='/faqs' aria-label='respuestas'>FAQ&apos;S</Link>
       </section>
     </div>
   )

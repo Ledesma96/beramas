@@ -41,7 +41,7 @@ const NavBarMobile = () => {
                 </div>
                 <Link onClick={handleOpen} className="link" href='/contact'>CONTACTO</Link>
                 <Link onClick={handleOpen} className="link" href='/aboutus'>NOSOTROS</Link>
-                <Link onClick={handleOpen} className="link" href='/faqs'>FAQ'S</Link>
+                <Link onClick={handleOpen} className="link" href='/faqs'>FAQ&apos;S</Link>
             </div>
         </section>
         <div className='navBarMobile_div'>
