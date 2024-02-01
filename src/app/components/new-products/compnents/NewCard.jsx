@@ -1,7 +1,7 @@
 'use client'
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
-import { Card } from '../../index.js'
+import { Card, CardsLoader } from '../../index.js'
 
 const NewCard = () => {
     const [products, setPoducts] = useState([])
@@ -23,7 +23,13 @@ const NewCard = () => {
         fetchData()
     },[])
   return (
-    <Card items={products}></Card>
+    <>
+        {products.length > 0 ? 
+            <Card items={products}></Card>
+            :
+            <CardsLoader></CardsLoader>
+        }
+    </>
   )
 }
 

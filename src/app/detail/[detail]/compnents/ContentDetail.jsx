@@ -1,15 +1,17 @@
 'use client'
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, Suspense} from 'react'
 import { useParams } from 'next/navigation'
 import axios from 'axios'
 import Pasarela from './Pasarela'
 import Link from 'next/link'
+import { DetailLoader } from '@/app/components'
 
 const ContentDetail = ({state}) => {
     const params = useParams()
     const id = params.detail
     const [product, setProduct] = useState({})
     const [images, setImages] = useState([])
+    const [loading, setLoading] = useState(true)
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
     useEffect(() => {
@@ -19,6 +21,7 @@ const ContentDetail = ({state}) => {
                 if(response.data.success){
                     setProduct(response.data.product)
                     setImages(response.data.product.thumbnail)
+                    setLoading(false)
                 } else {
                     console.log('Producto no encontrado')
                 }
@@ -28,7 +31,15 @@ const ContentDetail = ({state}) => {
         }
         fetchData()
     }, [])
+
+    // useEffect(() => {
+    //     setLoading(!loading)
+    // },[product])
   return (
+    <>
+    {loading ? 
+        <DetailLoader/>
+        :
     <div className='detail-container'>
         <Pasarela images={images}/>
         <main className='detail-container_main'>
@@ -63,6 +74,8 @@ const ContentDetail = ({state}) => {
                 <Link className='detail-container_main_Link' href=''>CONSULTAR</Link>
             </main>
         </div>
+    }
+    </>
   )
 }
 
