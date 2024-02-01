@@ -1,7 +1,19 @@
 'use client'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { useEffect } from 'react';
 
 const Carrousel = () => {
+  useEffect(() => {
+    // Verifica si estamos en el cliente antes de importar y usar Bootstrap
+    if (typeof window !== 'undefined') {
+      // Importa Bootstrap solo si estamos en el cliente
+      import('bootstrap/dist/js/bootstrap.bundle.min.js')
+        .then(() => {
+          // Opcional: inicializa cualquier componente de Bootstrap aquí
+        })
+        .catch((error) => console.error('Error loading Bootstrap', error));
+    }
+  }, []); // Ejecutar solo una vez al montar el componente
+
   return (
     <div
       id="carouselExampleDark"
