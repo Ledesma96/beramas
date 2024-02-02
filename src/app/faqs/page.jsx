@@ -5,16 +5,16 @@ const page = () => {
   return (
     <>
         <SeoFaqs></SeoFaqs>
-        <div className="accordion" id="accordionExample">
+        <div className="accordion pb-4" id="accordionExample">
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                ¿Cuáles son los materiales de fabricación de sus sillones y mesas?
+                ¿Cuáles son los materiales de fabricación de sus sillones?
                 </button>
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                    <strong>Utilizamos materiales de alta calidad,</strong> como maderas resistentes y tapicería duradera, para garantizar la durabilidad y comodidad de nuestros productos.
+                    <strong>Utilizamos materiales de alta calidad.</strong> La estructura esta compuesta por madera de saligna rodeado de cincha elástica italiana y cobertura de rafia de pasacalles, sobre eso goma espuma de alta densidad y tapizado con telas de primera. Doble costuras en todas sus terminaciones y almohadones
                 </div>
                 </div>
             </div>
@@ -63,30 +63,6 @@ const page = () => {
                 <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
                     <strong>Sí, todos nuestros productos vienen con garantías</strong> Revisamos cada artículo antes de la entrega, y cualquier problema posterior puede ser cubierto por nuestra política de garantía. Infórmate sobre los términos específicos.
-                </div>
-                </div>
-            </div>
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingSix">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                ¿Puedo devolver o cambiar un producto si no estoy satisfecho?
-                </button>
-                </h2>
-                <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                <div className="accordion-body">
-                    <strong>Sí, contamos con una política de devolución y cambio. </strong>  Si no estás satisfecho con tu compra, comunícate con nosotros dentro del período designado, y te ayudaremos a procesar la devolución o cambio.
-                </div>
-                </div>
-            </div>
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingSeven">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
-                ¿Ofrecen servicios de montaje para los muebles?
-                </button>
-                </h2>
-                <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                <div className="accordion-body">
-                    <strong>Sí, proporcionamos servicios de montaje para la mayoría de nuestros productos, ya sea como parte de la compra o a un costo adicional. </strong>  Infórmate sobre esta opción al realizar tu pedido.<code></code>
                 </div>
                 </div>
             </div>

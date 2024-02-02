@@ -9,8 +9,8 @@ const page = () => {
     <SeoContact></SeoContact>
     <div className='contact-container'>
         <div className='contact-container_div'>
-            <h1 className='contact-container_div_h1'>Ponerse en contacto</h1>
-            <p className='contact-container_div_p'>Estamos disponiles las 24hs los 7 días a la semana. Utilize nuestro formulario de contacto rapido para hacer consultas sobre nuestros servicios y productos. Estaremos encantados de responder tus dudas y consultas.</p>
+            <h1 className='contact-container_div_h1'>Solicitá presupuesto</h1>
+            <p className='contact-container_div_p'>Hacemos de tu idea una realidad. Consultanos por muebles a medida</p>
         </div>
         <Form></Form>
         <section className='contact-container_section'>
@@ -44,7 +44,7 @@ const page = () => {
                             <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
                         </svg>
-                        <p className='contact-container_section_div_div_p'>Lunés a Viernes de 9:00am a 21:00pm</p>
+                        <p className='contact-container_section_div_div_p'>Lunes a viernes 10.00 a 13.00 hs y 15.30 a 19.30. Sábado 10.00 a 13.00 hs y 15.30 a 19.00 hs</p>
                     </div>
                 </div>
                 <div className='contact-container_section_div'>
@@ -53,13 +53,13 @@ const page = () => {
                         <svg className='contact-container_section_div_div_svg' xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
                         </svg>
-                        <p className='contact-container_section_div_div_p'>Lunés a Viernes de 9:00am a 21:00pm</p>
+                        <p className='contact-container_section_div_div_p'>Av.Mitre 1110 e/11 y 12 Berazategui</p>
                     </div>
                 </div>
             </div>
         </section>
         <aside className='contact-container_aside'>
-            <iframe title='map' className='contact-container_aside_iframe' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.947674407386!2d-58.212198026215006!3d-34.75691090569121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f48bc5667bf%3A0xaed7ade0228c5063!2sBERA%20POSITIVO!5e0!3m2!1ses-419!2sar!4v1705326807783!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title='map' className='contact-container_aside_iframe' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.947674407386!2d-58.212198026215006!3d-34.75691090569121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f48bc5667bf%3A0xaed7ade0228c5063!2sBERA%20POSITIVO!5e0!3m2!1ses-419!2sar!4v1705326807783!5m2!1ses-419!2sar" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </aside>
     </div>
     </>

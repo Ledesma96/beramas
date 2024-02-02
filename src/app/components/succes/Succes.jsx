@@ -1,6 +1,6 @@
 const Success = ({children, notification}) => {
     return (
-        <div className={notification? 'succes-on' : 'success-off'}>
+        <div className={notification? 'success-on' : 'success-off'}>
             {children}
         </div>
     )

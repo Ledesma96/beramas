@@ -263,6 +263,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
 
         .navBarMobile_div_img{
             color: $color-secondary;
@@ -693,6 +694,8 @@
 //aboutus styles
 .aboutus-container{
     width: 100%;
+    position: relative;
+    
     .aboutus-container_div{
         width: 100%;
         padding: 0px 8px;
@@ -700,9 +703,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .aboutus-container_div_img{
-            width: 95%;
-            margin: 16px 0px;
+        margin-top: 32%;
+        background-color: white;
+        .aboutus-container_div-container-img{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 11%;
+            left: 0;
+            width: 100%;
+            z-index: -1; 
+            .aboutus-container_div_img{
+                width: 95%;
+                margin: 16px 0px;
+            }
+
         }
         .aboutus-container_div_h1{
             margin: 16px 0px;
@@ -719,15 +737,18 @@
             font-weight: 500;
             color: rgb(150, 150, 150);
             text-align: center;
-            margin: 16px 0px;
+            margin-top: 16px;
         }
     }
     .aboutus-container_section{
-        margin-top: 16px;
+        padding-top: 16px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        background-color: white;
+        padding-bottom: 32px;
+
         .aboutus-container_section_div{
             display: flex;
             flex-direction: column;
@@ -740,6 +761,7 @@
                 margin-bottom: 8px;
             }
             .aboutus-container_section_div_aside{
+                width: 90%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -811,13 +833,16 @@
             font-weight: 600;
             align-items: center;
             margin-left: 8px;
-            margin-top: 8px;
+            margin-bottom: 0px;
             font-size: 0.6rem;
+            color: white;
         }
         .message{
-            margin-left: 8px;
-            margin-top: 16px;
+            margin-left: 3px;
+            margin-bottom: 0px;
             font-size: 0.5rem;
+            color: white;
+            margin-top: 2px;
         }
     }
     .alert-on{
@@ -836,13 +861,16 @@
             font-weight: 600;
             align-items: center;
             margin-left: 8px;
-            margin-top: 8px;
+            margin-bottom: 0px;
             font-size: 0.6rem;
+            color: white;
         }
         .message{
-            margin-left: 8px;
-            margin-top: 16px;
+            margin-left: 3px;
+            margin-top: 2px;
+            margin-bottom: 0px;
             font-size: 0.5rem;
+            color: white;
         }
     }
     .contact-container_div{
@@ -956,6 +984,7 @@
     .contact-container_aside{
         width: 95%;
         margin: auto;
+        padding-bottom: 32px;
         .contact-container_aside_iframe{
             width: 100%;
             height: 200px;
@@ -986,7 +1015,6 @@
 
 .footer{
     overflow-x: hidden;
-    margin-top: 32px;
     background-color: $color-primary;
     display: flex;
     flex-direction: column;
@@ -1168,6 +1196,7 @@
             margin-top: 16px;
             display: flex;
             justify-content: center;
+            text-decoration: none;
             .navBar-desktop_div_img{
                 width: 30%;
             }
@@ -1350,6 +1379,7 @@
 
     //newProducts styles
     .new-produts {
+        padding-bottom: 32px;
         .new-products_container-card {
           .new-products_card {
             .new-products_card_section {

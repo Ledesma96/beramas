@@ -3,7 +3,7 @@ const CardLoader = ({count}) => {
     return(
         <div className="conteiner-card-loader">
             {render.map((index) => (
-                <div className="card-loader">
+                <div key={index} className="card-loader">
                     <div className="img-loader"></div>
                     <div className="title-loader"></div>
                     <div className="btn-loader"></div>

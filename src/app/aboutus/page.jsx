@@ -7,9 +7,11 @@ const page = () => {
         <SeoAboutUs></SeoAboutUs>
         <div className='aboutus-container'>
             <div className='aboutus-container_div'>
-                <img className='aboutus-container_div_img' src="/images/BANNER-COMEDOR-ESTEEEE.webp" alt="" />
+                <div className='aboutus-container_div-container-img'>
+                    <img className='aboutus-container_div_img' src="/images/BANNER-COMEDOR-ESTEEEE.webp" alt="" />
+                </div>
                 <h1 className='aboutus-container_div_h1'>S<span className='span'>OBRE NOSOTROS</span></h1>
-                <p className='aboutus-container_div_p'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, et numquam similique iusto excepturi libero tempora possimus consectetur adipisci, repellat ullam voluptates. Iure alias voluptates voluptatibus distinctio veritatis! Maxime, esse?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit quis quidem pariatur at eveniet modi labore assumenda perspiciatis alias saepe, ut, officiis facilis cum. Dignissimos pariatur qui assumenda ipsum.</p>
+                <p className='aboutus-container_div_p'> Somos Beramasssillones una empresa con mas de 10 años en el rubro. Contamos con fabricación propia para otorgar a cada creación el confort y la funcionalidad que sus espacios merecen.<br></br>                               Trabajamos con los mejores productos del mercado para garantizarle a nuestros clientes la seguridad de cada producto como merecen. Nuestra política se basa en la atención personalizada para lograr la conformidad y satisfacción de cada cliente</p>
             </div>
             <section className='aboutus-container_section'>
                 <div className='aboutus-container_section_div'>
@@ -18,7 +20,7 @@ const page = () => {
                     </svg>
                     <aside className='aboutus-container_section_div_aside'>
                         <h4 className='aboutus-container_section_div_aside_h4'>Envios al interior</h4>
-                        <p className='aboutus-container_section_div_aside_p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p className='aboutus-container_section_div_aside_p'>Realizamos envios al todo el pais. Consultanos para mas información.</p>
                     </aside>
                 </div>
                 <div className='aboutus-container_section_div'>
@@ -28,7 +30,7 @@ const page = () => {
                     </svg>
                     <aside className='aboutus-container_section_div_aside'>
                         <h4 className='aboutus-container_section_div_aside_h4'>Garantia estructural</h4>
-                        <p className='aboutus-container_section_div_aside_p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p className='aboutus-container_section_div_aside_p'>Nuestros productos cuentan con una garantía estructural de 5 años.</p>
                     </aside>
                 </div>
                 <div className='aboutus-container_section_div'>
@@ -36,8 +38,8 @@ const page = () => {
                         <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
                     </svg>
                     <aside className='aboutus-container_section_div_aside'>
-                        <h4 className='aboutus-container_section_div_aside_h4'>Envios en 24hs</h4>
-                        <p className='aboutus-container_section_div_aside_p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4 className='aboutus-container_section_div_aside_h4'>Envios en 48hs</h4>
+                        <p className='aboutus-container_section_div_aside_p'>Contamos con productos para entrega inmediata.</p>
                     </aside>
                 </div>
                 <div className='aboutus-container_section_div'>
@@ -46,7 +48,7 @@ const page = () => {
                     </svg>
                     <aside className='aboutus-container_section_div_aside'>
                         <h4 className='aboutus-container_section_div_aside_h4'>Somos fabricantes</h4>
-                        <p className='aboutus-container_section_div_aside_p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p className='aboutus-container_section_div_aside_p'>Todos nuestros productos son totalmente personalizables.</p>
                     </aside>
                 </div>
                 <div className='aboutus-container_section_div'>
@@ -55,7 +57,7 @@ const page = () => {
                     </svg>
                     <aside className='aboutus-container_section_div_aside'>
                         <h4 className='aboutus-container_section_div_aside_h4'>Calidad premium</h4>
-                        <p className='aboutus-container_section_div_aside_p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p className='aboutus-container_section_div_aside_p'>Trabajamos con los mejores materiales del mercado para garantizar una mayor durabilidad.</p>
                     </aside>
                 </div>
                 <div className='aboutus-container_section_div'>
@@ -64,7 +66,7 @@ const page = () => {
                     </svg>
                     <aside className='aboutus-container_section_div_aside'>
                         <h4 className='aboutus-container_section_div_aside_h4'>Atención personalizada</h4>
-                        <p className='aboutus-container_section_div_aside_p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p className='aboutus-container_section_div_aside_p'>Brindamos atención personalizada para hacer de tu hogar el lugar que imaginas.</p>
                     </aside>
                 </div>
             </section>

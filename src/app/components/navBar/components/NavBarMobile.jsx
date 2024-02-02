@@ -44,10 +44,10 @@ const NavBarMobile = () => {
                 <Link onClick={handleOpen} className="link" href='/faqs'>FAQ&apos;S</Link>
             </div>
         </section>
-        <div className='navBarMobile_div'>
+        <Link href='/' className='navBarMobile_div'>
             <img className='navBarMobile_div_img' src="images/logo.png" width={50} height={40} alt="Logotipo del local" />
             <p className='navBarMobile_div_name'>Bera<span className='navBarMobile_div_name_span'>+</span></p>
-        </div>
+        </Link>
     </div>
   )
 }

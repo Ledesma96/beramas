@@ -17,10 +17,10 @@ const NavBarDesktop = () => {
 
   return (
     <div className='navBar-desktop'>
-      <div className='navBar-desktop_div'>
+      <Link href='/' className='navBar-desktop_div'>
         <img className='navBar-desktop_div_img' src="images/logo.png" width={50} height={40} alt="Logotipo del local" />
         <p className='navBar-desktop_div_name'>BerA<span className='navBar-desktop_div_name_span'>+</span></p>
-      </div>
+      </Link>
       <section className='navBar-desktop_section'>
           <Link className={`navBar-desktop_section_link ${pathName == '/' ? 'active' : ''}`} href='/' aria-label='inicio'>INICIO</Link>
         <div className='navBar-desktop_section_div' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

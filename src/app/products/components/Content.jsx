@@ -30,7 +30,7 @@ const Content = () => {
                     console.log('No se obtuvieron los productos');
                 }
             } catch (error) {
-                log(error.message)
+                console.log(error.message)
             }
         }
         fetchData()
