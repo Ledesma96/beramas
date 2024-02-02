@@ -18,7 +18,7 @@ const NavBarDesktop = () => {
   return (
     <div className='navBar-desktop'>
       <Link href='/' className='navBar-desktop_div'>
-        <img className='navBar-desktop_div_img' src="images/logo.png" width={50} height={40} alt="Logotipo del local" />
+        <img className='navBar-desktop_div_img' src="/images/logo.png" width={50} height={40} alt="Logotipo del local" />
         <p className='navBar-desktop_div_name'>BerA<span className='navBar-desktop_div_name_span'>+</span></p>
       </Link>
       <section className='navBar-desktop_section'>
