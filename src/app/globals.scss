@@ -703,7 +703,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 32%;
+        margin-top: 45%;
         background-color: white;
         .aboutus-container_div-container-img{
             width: 100%;
@@ -1129,6 +1129,12 @@
 
     //aboutus
     .aboutus-container{
+        .aboutus-container_div{
+            margin-top: 35%;
+            .aboutus-container_div-container-img{
+                top: 8%;
+            }
+        }
         .aboutus-container_section{
             width: 100%;
             .aboutus-container_section_div{
@@ -1459,6 +1465,16 @@
             grid-column: 2;
             height: 100%;
             padding-bottom: 16px;
+        }
+    }
+
+    //aboutus styles
+    .aboutus-container{
+        .aboutus-container_div{
+            margin-top: 35%;
+            .aboutus-container_div-container-img{
+                top: 12%
+            }
         }
     }
       
