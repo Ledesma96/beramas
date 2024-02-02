@@ -314,6 +314,7 @@
 .new-produts{
     overflow-x: hidden;
     width: 100%;
+    padding-bottom: 32px;
     .new-produts_aside{
         width: 100%;
         height: 40px;
@@ -1385,7 +1386,6 @@
 
     //newProducts styles
     .new-produts {
-        padding-bottom: 32px;
         .new-products_container-card {
           .new-products_card {
             .new-products_card_section {
