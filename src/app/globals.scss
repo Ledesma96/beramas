@@ -7,6 +7,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+//card-loader
+.conteiner-card-loader{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .card-loader{
+        width: 250px;
+        height: 300px;
+        margin: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img-loader{
+            width: 95%;
+            height: 60%;
+            background: linear-gradient(90deg, #a4a4a5 25%, #c7c7c7 50%, #a4a4a5 75%);
+            background-size: 200% 100%;
+            animation: slide 2s linear infinite;
+        }
+        .title-loader{
+            width: 95%;
+            height: 6%;
+            margin: 8px;
+            background: linear-gradient(90deg, #a4a4a5 25%, #c7c7c7 50%, #a4a4a5 75%);
+            background-size: 200% 100%;
+            animation: slide 2s linear infinite;
+        }
+        .btn-loader{
+            width: 95%;
+            height: 6%;
+            margin: 8px;
+            background: linear-gradient(90deg, #a4a4a5 25%, #c7c7c7 50%, #a4a4a5 75%);
+            background-size: 200% 100%;
+            animation: slide 2s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+              background-position: 100% 0;
+            }
+            100% {
+              background-position: -100% 0;
+            }
+        }
+
+    }
+}
+
+
 //faqs
 .accordion-button:not(.collapsed){
     background-color: $color-secondary-opacity;
@@ -707,6 +758,43 @@
 
 //contact styles
 .contact-container{
+    .success-off{
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        padding: 8px;
+        background-color: rgba(1, 196, 1, 0.89);
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+        .mensaje{
+            margin: 0px;
+            margin-left: 6px;
+            color: white;
+        }
+
+    }
+    .success-on{
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        padding: 8px;
+        background-color: rgba(1, 196, 1, 0.89);
+       transform: translateY(0%);
+        transition: all 0.3s ease-in-out;
+        .mensaje{
+            margin: 0px;
+            margin-left: 6px;
+            color: white;
+        }
+    }
     .alert-off{
         position: fixed;
         top: 0;

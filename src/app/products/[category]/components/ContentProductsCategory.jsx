@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'next/navigation'
 import axios from 'axios'
-import { Card, CardsLoader } from '../../../components/index.js'
+import { Card, CardLoader, CardsLoader } from '../../../components/index.js'
 import FiltersProducts from './FiltersProducts.jsx'
 import Paginate from './Paginate.jsx'
 
@@ -24,7 +24,7 @@ const ContentProductsCategory = () => {
 
     useEffect(() => {
       const fetchData = async() => {
-          const response = await axios.get(apiUrl + `api/v1/products?&limit=10&page=${page}&category=${category}&sub_category=${subCategory}`)
+          const response = await axios.get(apiUrl + `api/v1/products?&limit=20&page=${page}&category=${category}&sub_category=${subCategory}`)
           try {
                if(response.data.success){
                     setProducts(response.data.products.docs)
@@ -61,7 +61,7 @@ const ContentProductsCategory = () => {
                 </div>
             </div>
             :
-            <CardsLoader/>
+            <CardLoader count={20}/>
         }
         </>
     )

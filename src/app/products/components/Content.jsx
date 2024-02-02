@@ -1,7 +1,7 @@
 'use client'
 import React,{useState, useEffect} from 'react'
 import axios from 'axios'
-import { Card, CardsLoader } from '../../components/index.js'
+import { Card, CardLoader} from '../../components/index.js'
 import Paginate from '../[category]/components/Paginate.jsx'
 
 const Content = () => {
@@ -16,7 +16,7 @@ const Content = () => {
 
     useEffect(() => {
         const fetchData = async() => {
-            const response = await axios.get(apiUrl + `api/v1/products?&limit=2&page=${page}`)
+            const response = await axios.get(apiUrl + `api/v1/products?&limit=20&page=${page}`)
             try {
                 if(response.data.success){
                     setProducts(response.data.products.docs)
@@ -50,7 +50,7 @@ const Content = () => {
                         setPage={setPage}></Paginate>
             </>
             :
-            <CardsLoader></CardsLoader>
+            <CardLoader count={20}/>
             
         }
     </>
