@@ -267,6 +267,7 @@
 
         .navBarMobile_div_img{
             color: $color-secondary;
+            width: 50%;
             margin-left: -20%;
         }
 
@@ -706,7 +707,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 45%;
-        background-color: black;
+        background-color: white;
         .aboutus-container_div-container-img{
             width: 100%;
             display: flex;
@@ -748,7 +749,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: white;
         padding-bottom: 32px;
 
         .aboutus-container_section_div{
@@ -1118,7 +1119,7 @@
             top: 0;
             left: 0;
             .filters_title{
-                background-color: black;
+                background-color: rgb(240, 240, 240);
             }
         }
         .container-cards{
@@ -1201,12 +1202,12 @@
         justify-content: space-between;
         background-color: $color-primary;
         .navBar-desktop_div{
-            margin-top: 16px;
+            padding: 8px;
             display: flex;
             justify-content: center;
             text-decoration: none;
             .navBar-desktop_div_img{
-                width: 30%;
+                width: 100%;
             }
             .navBar-desktop_div_name{
                 font-size: 1.6rem;

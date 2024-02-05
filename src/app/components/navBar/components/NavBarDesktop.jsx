@@ -19,12 +19,11 @@ const NavBarDesktop = () => {
     <div className='navBar-desktop'>
       <Link href='/' className='navBar-desktop_div'>
         <img className='navBar-desktop_div_img' src="/images/logo.png" width={50} height={40} alt="Logotipo del local" />
-        <p className='navBar-desktop_div_name'>BerA<span className='navBar-desktop_div_name_span'>+</span></p>
       </Link>
       <section className='navBar-desktop_section'>
           <Link className={`navBar-desktop_section_link ${pathName == '/' ? 'active' : ''}`} href='/' aria-label='inicio'>INICIO</Link>
         <div className='navBar-desktop_section_div' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <Link className={`navBar-desktop_section_link ${pathName.startsWith('/products') ? 'active' : ''}`} href='/products' aria-label='productos'>PRODUCTOS</Link>
+        <Link className={`navBar-desktop_section_link ${pathName.startsWith('/products') || pathName.startsWith('/detail') ? 'active' : ''}`} href='/products' aria-label='productos'>PRODUCTOS</Link>
           <aside onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave} className={open ? 'navBar-desktop_section_div_aside-on' : 'navBar-desktop_section_div_aside-off'}>
             <Link className='navBar-desktop_section_div_aside_lnik' href={`/products/sofas`} aria-label='sofas'>Sofás</Link>

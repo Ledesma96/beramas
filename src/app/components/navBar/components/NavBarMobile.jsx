@@ -45,8 +45,7 @@ const NavBarMobile = () => {
             </div>
         </section>
         <Link href='/' className='navBarMobile_div'>
-            <img className='navBarMobile_div_img' src="images/logo.png" width={50} height={40} alt="Logotipo del local" />
-            <p className='navBarMobile_div_name'>Bera<span className='navBarMobile_div_name_span'>+</span></p>
+            <img className='navBarMobile_div_img' src="/images/logo.png" width={50} height={40} alt="Logotipo del local" />
         </Link>
     </div>
   )
