@@ -44,21 +44,21 @@ const Carrousel = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="10000">
-          <img src="/images/banner1.jpg" className="d-block w-100" alt="..." />
+          <img src="/images/banner1.webp" className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
             <h5></h5>
             <p></p>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img src="/images/banner2.jpg" className="d-block w-100" alt="..." />
+          <img src="/images/banner2.webp" className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
             <h5></h5>
             <p></p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src="/images/banner3.jpg" className="d-block w-100" alt="..." />
+          <img src="/images/banner3.webp" className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
             <h5></h5>
             <p></p>

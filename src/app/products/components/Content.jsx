@@ -16,7 +16,7 @@ const Content = () => {
 
     useEffect(() => {
         const fetchData = async() => {
-            const response = await axios.get(apiUrl + `api/v1/products?&limit=20&page=${page}`)
+            const response = await axios.get(apiUrl + `/api/v1/products?&limit=20&page=${page}`)
             try {
                 if(response.data.success){
                     setProducts(response.data.products.docs)

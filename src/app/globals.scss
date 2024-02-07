@@ -706,42 +706,38 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 45%;
         background-color: white;
-        .aboutus-container_div-container-img{
+        .aboutus-container_div_div{
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            position: fixed;
-            top: 11%;
-            left: 0;
-            width: 100%;
-            z-index: -1; 
             .aboutus-container_div_img{
                 width: 95%;
                 margin: 16px 0px;
+                border-radius: 6px;
             }
-
+            .aboutus-container_div_p{
+                width: 95%;
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: rgb(150, 150, 150);
+                text-align: center;
+                margin-top: 16px;
+            }
         }
+
         .aboutus-container_div_h1{
-            margin: 16px 0px;
-            font-size: 1.3rem;
+            margin: 32px 0px;
+            font-size: 1.7rem;
             font-weight: 700;
             .span{
                 border-bottom: 0.2px solid $color-secondary;
                 padding-bottom: 2px;
             }
         }
-        .aboutus-container_div_p{
-            width: 95%;
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: rgb(150, 150, 150);
-            text-align: center;
-            margin-top: 16px;
-        }
+        
     }
     .aboutus-container_section{
         padding-top: 16px;
@@ -1030,7 +1026,7 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 16px;
-        border-bottom: 0.5px solid $color-secondary;
+        border-bottom: 0.4px solid $color-secondary;
         margin-bottom: 16px;
 
         .footer_navigation_h6,
@@ -1054,6 +1050,12 @@
                 display: flex;
                 color: black;
                 margin-left: 8px;
+                transition: all 0.1s ease-in-out;
+            }
+            .footer_social_svg:hover{
+                color: $color-secondary;
+                transform: rotateZ(-15deg);
+                transition: all 0.1s ease-in-out;
             }
         }
         
@@ -1132,12 +1134,7 @@
 
     //aboutus
     .aboutus-container{
-        .aboutus-container_div{
-            margin-top: 35%;
-            .aboutus-container_div-container-img{
-                top: 8%;
-            }
-        }
+        
         .aboutus-container_section{
             width: 100%;
             .aboutus-container_section_div{
@@ -1159,6 +1156,20 @@
 } 
 
 @media screen and (min-width: 1024px){
+    //aboutus 
+    .aboutus-container{
+        .aboutus-container_div{
+            .aboutus-container_div_div{
+                flex-direction: row;
+                .aboutus-container_div_img{
+                    width: 50%;
+                }
+                .aboutus-container_div_p{
+                    width: 40%;
+                }
+            }
+        }
+    }
     //card
     .container-card {
         .products-card {
@@ -1198,27 +1209,17 @@
       }
     //navbar styles
     .navBar-desktop{
+        height: 80px;
         display: flex;
         justify-content: space-between;
         background-color: $color-primary;
         .navBar-desktop_div{
-            padding: 8px;
+            margin: auto 0px;
             display: flex;
             justify-content: center;
             text-decoration: none;
             .navBar-desktop_div_img{
                 width: 100%;
-            }
-            .navBar-desktop_div_name{
-                font-size: 1.6rem;
-                font-weight: 600;
-                color: black;
-                text-align: center;
-                margin-left: 8px;
-                .navBar-desktop_div_name_span{
-                    color: $color-secondary;
-                    font-size: 1.8rem;
-                }
             }
         }
         .navBar-desktop_section{
@@ -1244,9 +1245,10 @@
                     overflow: hidden;
                     padding: 0px;
                     background-color: $color-primary;
-                    border: 0.1px solid black;
                     z-index: 999;
-                    transition: width 0.3s ease-in-out;
+                    transition: width 0.3s ease-in-out, height 0.0s ease-in-out, padding 0.01s ease-in-out;
+                    transition-delay: 0s, 0.25s, 0.20s;
+
                     .navBar-desktop_section_div_aside_lnik{
                         text-decoration: none;
                         color: black;
@@ -1261,10 +1263,11 @@
                     top: 100%;
                     left: 0;
                     width: 100px;
+                    height: 100px;
                     padding: 8px;
                     overflow: hidden;
                     background-color: $color-primary;
-                    border: 0.1px solid black;
+                    border: 0.1px solid $color-primary;
                     z-index: 999;
                     transition: width 0.2s ease-in-out;
                     .navBar-desktop_section_div_aside_lnik{
@@ -1277,8 +1280,8 @@
             .navBar-desktop_section_link{
                 text-decoration: none;
                 color: black;
-                font-size: 0.8rem;
-                font-weight: 500;
+                font-size: 1rem;
+                font-weight: 600;
                 padding: 8px;
                 margin-right: 6px;
                 position: relative;
@@ -1471,14 +1474,7 @@
     }
 
     //aboutus styles
-    .aboutus-container{
-        .aboutus-container_div{
-            margin-top: 35%;
-            .aboutus-container_div-container-img{
-                top: 12%
-            }
-        }
-    }
+    
       
 
     //FOOTER STYLES
@@ -1498,7 +1494,7 @@
             width: 1px;
             top: 13%;
             right:0 ;
-            border-right: 0.2px solid $color-secondary;
+            border-right: 0.4px solid $color-secondary;
         }
         .footer_contact-us{
             grid-column: 2;
@@ -1513,7 +1509,7 @@
             width: 1px;
             top: 13%;
             right:0 ;
-            border-right: 0.2px solid $color-secondary;
+            border-right: 0.4px solid $color-secondary;
         }
         .footer_social{
             grid-column: 3;

@@ -8,6 +8,7 @@ import CustonRightArrow from "./CustonRightArrow";
 
 const Pasarela = ({images}) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
     const handleRize = () => {
@@ -21,8 +22,8 @@ const Pasarela = ({images}) => {
   },[])
 
   const transformedImages = images.map((url, index) => ({
-    original: url,
-    thumbnail: url, 
+    original: apiUrl + url,
+    thumbnail: apiUrl + url, 
   }));
         
   return (
