@@ -16,7 +16,7 @@ const ContentDetail = ({state}) => {
 
     useEffect(() => {
         const fetchData = async() => {
-            const response = await axios.get(apiUrl + `/api/v1/products/filter/${id}`)
+            const response = await axios.get(apiUrl + `api/v1/products/filter/${id}`)
             try {
                 if(response.data.success){
                     setProduct(response.data.product)

@@ -24,7 +24,7 @@ const ContentProductsCategory = () => {
 
     useEffect(() => {
       const fetchData = async() => {
-          const response = await axios.get(apiUrl + `/api/v1/products?&limit=20&page=${page}&category=${category}&sub_category=${subCategory}`)
+          const response = await axios.get(apiUrl + `api/v1/products?&limit=20&page=${page}&category=${category}&sub_category=${subCategory}`)
           try {
                if(response.data.success){
                     setProducts(response.data.products.docs)

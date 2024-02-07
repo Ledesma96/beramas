@@ -9,7 +9,7 @@ const NewCard = () => {
 
     useEffect(() => {
         const fetchData = async() => {
-            const response = await axios.get(apiUrl + '/api/v1/products?category=sofas&limit=8&page=1')
+            const response = await axios.get(apiUrl + 'api/v1/products?category=sofas&limit=8&page=1')
             try {
                 if(response.data.success){
                    setPoducts(response.data.products.docs)

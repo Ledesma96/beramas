@@ -32,7 +32,7 @@ const Form = () => {
       };
     
       try {
-        const response = await axios.post(apiUrl + '/api/v1/email', data);
+        const response = await axios.post(apiUrl + 'api/v1/email', data);
     
         if (response.data.success) {
           setNotification(true);
