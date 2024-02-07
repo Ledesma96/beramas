@@ -9,7 +9,7 @@ const page = () => {
             <div className='aboutus-container_div'>
                 <h1 className='aboutus-container_div_h1'>S<span className='span'>OBRE NOSOTROS</span></h1>
                 <div className='aboutus-container_div_div'>
-                    <img className='aboutus-container_div_img' src="/images/DSC_3639-_1_.webp" alt="" />
+                    <img className='aboutus-container_div_img' src="/images/BANNER-COMEDOR-ESTEEEE.webp" alt="" />
                     <p className='aboutus-container_div_p'> Somos Beramasssillones una empresa con mas de 10 años en el rubro. Contamos con fabricación propia para otorgar a cada creación el confort y la funcionalidad que sus espacios merecen.<br></br>                               Trabajamos con los mejores productos del mercado para garantizarle a nuestros clientes la seguridad de cada producto como merecen. Nuestra política se basa en la atención personalizada para lograr la conformidad y satisfacción de cada cliente.</p>
                 </div>
             </div>

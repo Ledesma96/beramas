@@ -634,6 +634,7 @@
         }
         .detail-container_main_p{
             display: flex;
+            margin-top: 32px;
             .detail-container_main_p_span{
                 margin-right: 4px;
                 display: flex;
@@ -647,6 +648,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 40px;
             .detail-container_main_section_div{
                 height: 130px;
                 width: 33%;
@@ -1112,6 +1114,17 @@
 }
 
 @media  screen and (min-width: 768px){
+//navbarmobile
+    .navBarMobile{
+        .navBarMobile_div{
+            width: 100%;
+            .navBarMobile_div_img{
+                width: 20%;
+            }
+        }
+    }
+
+
     .container-category{
         display: grid;
         grid-template-columns: 0.2fr 0.8fr;
