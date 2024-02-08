@@ -50,19 +50,19 @@ const page = () => {
                 </h2>
                 <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                    <strong>Tenemos políticas claras de envío y entrega.</strong> La tarifa y el tiempo de entrega pueden variar según la ubicación. Consulta nuestra sección de envíos o comunícate con nosotros para obtener información específica.
+                    <strong>Tenemos políticas claras de envío y entrega.</strong> La tarifa y el tiempo de entrega pueden variar según la ubicación. Comunícate con nosotros para obtener información específica.
                 </div>
                 </div>
             </div>
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingFive">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                ¿Ofrecen garantía en sus productos?
+                ¿Ofrecen garantía en sus sillones?
                 </button>
                 </h2>
                 <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                    <strong>Sí, todos nuestros productos vienen con garantías</strong> Revisamos cada artículo antes de la entrega, y cualquier problema posterior puede ser cubierto por nuestra política de garantía. Infórmate sobre los términos específicos.
+                    <strong>Sí, todos nuestros sillones cuentan con garantías</strong> Revisamos cada producto antes de la entrega, y cualquier inconveniente posterior puede ser cubierto por nuestra política de garantía. Infórmate sobre los términos específicos con nuestro equipo.
                 </div>
                 </div>
             </div>
