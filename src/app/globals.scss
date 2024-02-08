@@ -607,8 +607,8 @@
             z-index: 2;
             top: 50%;
             transform: translateY(-50%);
-            background-color: $color-secondary;
-            color: black ;
+            background-color: $color-secondary-opacity;
+            color: transparent ;
             border-radius: 8px;
         }
         .custom-right-arrow{
@@ -617,8 +617,8 @@
             top: 50%;
             transform: translateY(-50%);
             right: 0;
-            background-color:$color-secondary;
-            color: black ;
+            background-color:$color-secondary-opacity;
+            color: transparent ;
             border-radius: 8px;
         }
     }
@@ -691,7 +691,7 @@
             text-decoration: none;
             background-color: $color-secondary;
             border-radius: 6PX;
-            color: black;
+            color: rgb(255, 255, 255);
         }
     }
 }
