@@ -1209,7 +1209,7 @@
               }
               .products-card_section_link:hover{
                   .span{
-                      color: black;
+                      color: rgb(255, 255, 255);
                       transition: color 0.4s ease-in-out;
                   }
                   &::after{
@@ -1464,7 +1464,7 @@
         }
         .new-products_link:hover{
             .span{
-                color: black;
+                color: rgb(255, 255, 255);
                 z-index: 2;
                 transition: color 0.5s ease-in-out;
             }
