@@ -608,7 +608,7 @@
             top: 50%;
             transform: translateY(-50%);
             background-color: $color-secondary-opacity;
-            color: transparent ;
+            color: white ;
             border-radius: 8px;
         }
         .custom-right-arrow{
@@ -618,7 +618,7 @@
             transform: translateY(-50%);
             right: 0;
             background-color:$color-secondary-opacity;
-            color: transparent ;
+            color: white ;
             border-radius: 8px;
         }
     }
@@ -965,6 +965,7 @@
 
                 .contact-container_section_div_div_p{
                     margin-left: 8px;
+                    width: 85%;
                 }
 
                 .contact-container_section_div_div_link{
