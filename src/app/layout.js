@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <link rel='canonical' href='https://www.beramassillones.com/' key='canonical'></link>
-        
+        <link rel="preload"></link>
       </head>
       <body className={inter.className}>
         <NavBar></NavBar>
