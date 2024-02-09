@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <link rel='canonical' href='http:127.0.0.1:3001' key='canonical'></link>
+        <link rel='canonical' href='https://www.beramassillones.com/' key='canonical'></link>
         
       </head>
       <body className={inter.className}>
