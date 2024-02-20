@@ -7,7 +7,7 @@ const Card = ({items}) => {
     <div className='container-card'>
     {items.map((item) =>(
         <div key={item._id} className='products-card'>
-            <img className='products-card_img'
+            <img  className='products-card_img'
              src={apiUrl + item.thumbnail[0]} 
              alt={item.name} 
              loading='lazy'

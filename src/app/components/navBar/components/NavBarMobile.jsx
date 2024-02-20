@@ -37,7 +37,7 @@ const NavBarMobile = () => {
                 <div className={openProducts ? "navBarMobile_section_div_div-on" : 'navBarMobile_section_div_div-off'}>
                     <Link onClick={() => { handleOpen(); handleOpenProducts(); }} className="links-category" href={`/products/sofas`}>SOFÁS</Link>
                     <Link onClick={() => { handleOpen(); handleOpenProducts(); }} className="links-category" href={`/products/mesas`}>MESAS</Link>
-                    <Link onClick={() => { handleOpen(); handleOpenProducts(); }} className="links-category" href={`/products/sillas`}>SILLAS</Link>
+                    <Link onClick={() => { handleOpen(); handleOpenProducts(); }} className="links-category" href={`/products/muebles`}>MUEBLES</Link>
                 </div>
                 <Link onClick={handleOpen} className="link" href='/contact'>CONTACTO</Link>
                 <Link onClick={handleOpen} className="link" href='/aboutus'>NOSOTROS</Link>
