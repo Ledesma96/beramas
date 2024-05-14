@@ -78,9 +78,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        .products-card_img{
-            width: 95%;
+        .container-img{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            .products-card_img{
+                width: 95%;
+            }
         }
 
         .products-card_section{

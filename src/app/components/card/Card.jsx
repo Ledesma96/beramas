@@ -7,11 +7,13 @@ const Card = ({items}) => {
     <div className='container-card'>
     {items.map((item) =>(
         <div key={item._id} className='products-card'>
+          <div className='container-img'>
             <img  className='products-card_img'
              src={apiUrl + item.thumbnail[0]} 
              alt={item.name} 
              loading='lazy'
              decoding='async'/>
+          </div>
             <section className='products-card_section'>
                 <h2 className='products-card_section_h5'>{item.name}</h2>
                 <Link className='products-card_section_link' href={`/detail/${item._id}`}><span className='span'>DETALLES</span></Link>
