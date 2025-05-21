@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: $color-secondary;
+}
 //card-loader
 .conteiner-card-loader{
     width: 100%;
@@ -112,7 +115,7 @@
                 justify-content: center;
                 text-decoration: none;
                 color: $color-secondary;
-                border: 0.5px solid $color-secondary;
+                border: 0.5px solid $color-primary;
             }
         }
     }
@@ -331,7 +334,7 @@
         margin-left: 8px;
         .new-produts_aside_span{
             display: flex;
-            background-color: $color-secondary;
+            background-color: $color-primary;
             width: 30px;
             height: 15px;
         }
@@ -342,7 +345,7 @@
             color: $color-tertiary;
 
             .new-produts_aside_p_span{
-                border-bottom: 0.5px solid $color-secondary;
+                border-bottom: 0.5px solid $color-primary;
             }
         }
     }
@@ -1177,7 +1180,7 @@
 } 
 
 @media screen and (min-width: 1024px){
-    //aboutus 
+    //aboutus
     .aboutus-container{
         .aboutus-container_div{
             .aboutus-container_div_div{
@@ -1199,14 +1202,14 @@
                   position: relative;
                   overflow-x: hidden;
                   .span{
-                      color: $color-secondary;
+                      color: $color-primary;
                       z-index: 2;
                   }
                   &::after {
                       content: "";
                       width: 100%;
                       height: 100%;
-                      background-color: $color-secondary;
+                      background-color: $color-primary;
                       position: absolute;
                       border: none;
                       z-index: 1;
