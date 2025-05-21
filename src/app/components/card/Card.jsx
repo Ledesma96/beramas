@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Card = ({items}) => {
@@ -8,15 +7,12 @@ const Card = ({items}) => {
     {items.map((item) =>(
         <div key={item._id} className='products-card'>
           <div className='container-img'>
-          <Image
-            className='products-card_img'
-            src={apiUrl + item.thumbnail[0]}
-            alt={item.name}
-            width={300}
-            height={300}
-            loading='lazy'
-            unoptimized={false}
-          />
+            <img  className='products-card_img'
+              src={apiUrl + item.thumbnail[0]}
+              alt={item.name}
+              loading='lazy'
+              decoding='async'
+            />
           </div>
             <section className='products-card_section'>
                 <h2 className='products-card_section_h5'>{item.name}</h2>
