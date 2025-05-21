@@ -490,17 +490,14 @@ body{
         justify-content: space-between;
         align-items: center;
         background-color: $color-secondary;
-        border: 0.5px solid $color-primary;
         .svg-off {
             transform: rotateZ(0deg);
             transition: all 0.2s ease-in-out;
-          }
-          
-          .svg-on {
+        }
+        .svg-on {
             transform: rotateZ(180deg);
             transition: all 0.2s ease-in-out;
-          }
-          
+        }
     }
     .filters_form-off{
         display: flex;
@@ -1146,7 +1143,7 @@ body{
             top: 0;
             left: 0;
             .filters_title{
-                background-color: rgb(240, 240, 240);
+                background-color: $color-secondary;
             }
         }
         .container-cards{
@@ -1424,7 +1421,7 @@ body{
                     position: relative;
                     overflow-x: hidden;
                     .span{
-                        color: $color-secondary;
+                        color: $color-primary;
                         z-index: 2;
                     }
                     &::after {
