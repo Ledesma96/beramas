@@ -168,7 +168,7 @@ body{
                 z-index: 999;
                 .link{
                     text-decoration: none;
-                    color: black;
+                    color: $color-secondary;
                     margin-top: 10px;
                     font-size: 1.1rem;
                     font-weight: 600;
@@ -181,7 +181,7 @@ body{
                     transition: all 0.3s ease-in;
                     .links-category{
                         text-decoration: none;
-                        color: black;
+                        color: $color-secondary;
                         margin-top: 10px;
                         font-size: 1.1rem;
                         font-weight: 600;
@@ -196,7 +196,7 @@ body{
                     transition: all 0.3s ease-in;
                     .links-category{
                         text-decoration: none;
-                        color: black;
+                        color: $color-secondary;
                         margin-top: 10px;
                         font-size: 1.1rem;
                         font-weight: 600;
@@ -231,7 +231,7 @@ body{
 
             .link{
                 text-decoration: none;
-                color: black;
+                color: $color-secondary;
                 margin-top: 10px;
                 font-size: 1.1rem;
                 font-weight: 600;
@@ -244,7 +244,7 @@ body{
                 transition: all 0.3s ease-in;
                 .links-category{
                     text-decoration: none;
-                    color: black;
+                    color: $color-secondary;
                     margin-top: 10px;
                     font-size: 1.1rem;
                     font-weight: 600;
@@ -259,7 +259,7 @@ body{
                 transition: all 0.3s ease-in;
                 .links-category{
                     text-decoration: none;
-                    color: black;
+                    color: $color-secondary;
                     margin-top: 10px;
                     font-size: 1.1rem;
                     font-weight: 600;
@@ -280,7 +280,7 @@ body{
 
         .navBarMobile_div_img{
             color: $color-secondary;
-            width: 50%;
+            width: 20%;
             margin-left: -20%;
         }
 
@@ -745,6 +745,7 @@ body{
             margin: 32px 0px;
             font-size: 1.7rem;
             font-weight: 700;
+            color: $color-primary;
             .span{
                 border-bottom: 0.2px solid $color-secondary;
                 padding-bottom: 2px;
@@ -769,7 +770,7 @@ body{
             margin: 16px 32px;
             width: 350px;
             .aboutus-container_section_div_icon{
-                color: $color-secondary;
+                color: $color-primary;
                 margin-bottom: 8px;
             }
             .aboutus-container_section_div_aside{
@@ -781,6 +782,7 @@ body{
                 .aboutus-container_section_div_aside_h4{
                     font-size: 1.2rem;
                     font-weight: 700;
+                    color: $color-primary;
                 }
                 .aboutus-container_section_div_aside_p{
                     text-align: center;
@@ -1013,13 +1015,16 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: $color-secondary;
     .accordion-item{
         margin-top: 16px;
         border: none;
-        border-top: 0.5px solid rgb(209, 208, 208);
-        border-bottom: 0.5px solid rgb(209, 208, 208);
+        border-top: 0.5px solid $color-tertiary;
+        border-bottom: 0.5px solid $color-tertiary;
+        background-color: $color-secondary;
         .accordion-button{
             width: 99vw;
+            background-color: $color-secondary;
         }
     }
 }
@@ -1075,12 +1080,12 @@ body{
         
         .footer_contact-us_svg{
             display: flex;
-            color: black;
+            color: $color-secondary;
             margin-top: 8px;
             
             .footer_contact-us_svg_span{
                 margin-left: 8px;
-                color: black ;
+                color: $color-secondary ;
                 font-size: 0.9rem;
             }
         }
@@ -1093,7 +1098,7 @@ body{
         .footer_dev_link{
             font-size: 1rem;
             text-decoration: none;
-            color: black;
+            color: $color-secondary;
         }
     }
 }
@@ -1210,7 +1215,7 @@ body{
                       content: "";
                       width: 100%;
                       height: 100%;
-                      background-color: $color-secondary;
+                      background-color: $color-primary;
                       position: absolute;
                       border: none;
                       z-index: 1;
@@ -1220,7 +1225,7 @@ body{
               }
               .products-card_section_link:hover{
                   .span{
-                      color: rgb(255, 255, 255);
+                      color: $color-secondary;
                       transition: color 0.4s ease-in-out;
                   }
                   &::after{
