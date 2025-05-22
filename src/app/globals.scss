@@ -116,6 +116,9 @@ body{
                 text-decoration: none;
                 color: $color-secondary;
                 border: 0.5px solid $color-primary;
+                .span{
+                    color: $color-primary;
+                }
             }
         }
     }
@@ -666,7 +669,7 @@ body{
                 align-items: center;
 
                 .detail-container_main_section_div_svg{
-                    color: $color-secondary;
+                    color: $color-primary;
                 }
 
                 .detail-container_main_section_div_p{
@@ -697,7 +700,7 @@ body{
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            background-color: $color-secondary;
+            background-color: $color-primary;
             border-radius: 6PX;
             color: rgb(255, 255, 255);
         }
@@ -895,7 +898,7 @@ body{
             font-weight: 700;
         }
         .contact-container_div_p{
-            color: rgba(141, 141, 141, 0.644);
+            color: $color-primary;
             text-align: center;
         }
     }
@@ -926,11 +929,11 @@ body{
             width: 90%;
             height: 45px;
             margin-top: 16px;
-            border: 0.5px solid $color-secondary;
+            border: 0.5px solid $color-primary;
             border-radius: 6px;
             background-color: white;
             .span{
-                color: $color-secondary;
+                color: $color-primary;
             }
         }
     }
@@ -968,7 +971,7 @@ body{
                 margin-bottom: 32px;
 
                 .contact-container_section_div_div_svg{
-                    color: $color-secondary;
+                    color: $color-primary;
                 }
 
                 .contact-container_section_div_div_p{
@@ -980,7 +983,7 @@ body{
                     text-decoration: none;
                     margin-right: 16px;
                     .contact-container_section_div_div_link_svg{
-                        color: $color-secondary;
+                        color: $color-primary;
 
                     }
                 }
@@ -1043,7 +1046,7 @@ body{
         .footer_navigation_h6,
         .footer_contact-us_h6,
         .footer_social_h6{
-            color: black;
+            color: $color-secondary;
             font-size: 1.2rem;
             font-weight: 500;
         }
@@ -1051,7 +1054,7 @@ body{
         
         .footer_navigation_link{
             text-decoration: none;
-            color: black;
+            color: $color-secondary;
             font-size: 0.9rem;
         }
 
@@ -1059,7 +1062,7 @@ body{
             display: flex;
             .footer_social_svg{
                 display: flex;
-                color: black;
+                color: $color-secondary;
                 margin-left: 8px;
                 transition: all 0.1s ease-in-out;
             }
@@ -1207,7 +1210,7 @@ body{
                       content: "";
                       width: 100%;
                       height: 100%;
-                      background-color: $color-primary;
+                      background-color: $color-secondary;
                       position: absolute;
                       border: none;
                       z-index: 1;
@@ -1274,7 +1277,8 @@ body{
 
                     .navBar-desktop_section_div_aside_lnik{
                         text-decoration: none;
-                        color: black;
+                        color: $color-secondary;
+                        margin-bottom: 6px;
                     }
                 }
                 .navBar-desktop_section_div_aside-on{
@@ -1295,14 +1299,15 @@ body{
                     transition: width 0.2s ease-in-out;
                     .navBar-desktop_section_div_aside_lnik{
                         text-decoration: none;
-                        color: black;
+                        color: $color-secondary;
+                        margin-bottom: 6px;
                     }
                 }
 
             }
             .navBar-desktop_section_link{
                 text-decoration: none;
-                color: black;
+                color: $color-secondary;
                 font-size: 1rem;
                 font-weight: 600;
                 padding: 8px;
@@ -1366,14 +1371,14 @@ body{
                 position: relative;
                 overflow-x: hidden;
                 .span{
-                    color: $color-secondary;
+                    color: $color-primary;
                     z-index: 2;
                 }
                 &::after {
                     content: "";
                     width: 100%;
                     height: 100%;
-                    background-color: $color-secondary;
+                    background-color: $color-primary;
                     position: absolute;
                     border: none;
                     top: 0;
