@@ -1,14 +1,14 @@
-import { Inter } from 'next/font/google'
-import './globals.scss'
 import 'bootstrap/dist/css/bootstrap.css'
+import { Inter } from 'next/font/google'
 import { Footer, NavBar, Wpp } from './components/index.js'
+import './globals.scss'
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Bera positivo',
+  title: 'Bera positivo - Inicio',
   description: 'Explora nuestra colección de sofás y mesas diseñados para elevar el confort y el estilo de tu hogar. Descubre sofisticados diseños y calidad excepcional que transformarán tu sala de estar en un espacio acogedor y moderno. Encuentra el sofá y la mesa perfectos para tu hogar hoy mismo.',
   keywords: 'bera positivo, sillones berazategui, berazategui sillones, bera, Berazategui, Muebles, Sofás, Berazategui muebles, Muebles Berazategui, Sofás y Mesas, Muebles para el Hogar, Decoración de Interiores, Diseño de Interiores, Mobiliario Moderno, Tienda de Muebles Online, Ofertas de Muebles, Envío Gratuito de Muebles, Confort y Estilo para tu Hogar, Experiencia de Compra Online, Envios al interior, Sofás, Sillones, Esquineros, Sillas, Mesas, Mesas y sillas, Deco y hogar'
 }
