@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaWhatsapp } from "react-icons/fa";
 
 const Popup = ({ productName, setShowPopup }) => {
     const message = encodeURIComponent(
