@@ -693,17 +693,132 @@ body{
             }
         }
 
-        .detail-container_main_Link{
-            width: 98%;
+        $wpp-color: #25d366;
+        $wpp-hover: #1ebe5b;
+        $text-color: #333;
+        $border-radius: 8px;
+
+        .consult-button {
+            width: 90%;
             height: 40px;
-            display: flex;
-            justify-content: center;
+            background-color: $wpp-color;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: $border-radius;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: inline-flex;
             align-items: center;
-            text-decoration: none;
-            background-color: $color-primary;
-            border-radius: 6PX;
-            color: rgb(255, 255, 255);
+            gap: 8px;
+
+            &:hover {
+                background-color: $wpp-hover;
+            }
         }
+
+/* === Popup === */
+        .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+
+        .popup-content {
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 16px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            animation: fadeIn 0.3s ease-in-out;
+
+            h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: $text-color;
+            }
+
+            .popup-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .wpp-button {
+                background-color: $wpp-color;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 16px;
+                border-radius: $border-radius;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                transition: background 0.3s;
+
+                &:hover {
+                background-color: $wpp-hover;
+                }
+            }
+            }
+
+            .close-btn {
+            margin-top: 20px;
+            background: transparent;
+            border: 1px solid #ccc;
+            padding: 8px 16px;
+            border-radius: $border-radius;
+            cursor: pointer;
+            color: #555;
+            font-weight: 500;
+
+            &:hover {
+                background: #eee;
+            }
+            }
+        }
+        }
+
+        /* === Animación === */
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+        }
+
+        /* === Responsive === */
+        @media (max-width: 480px) {
+        .popup-overlay {
+            .popup-content {
+            padding: 20px;
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .popup-buttons {
+                .wpp-button {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+                }
+            }
+            }
+        }
+        }
+
     }
 }
 
@@ -823,7 +938,7 @@ body{
         width: 100%;
         padding: 8px;
         background-color: rgba(1, 196, 1, 0.89);
-       transform: translateY(0%);
+        transform: translateY(0%);
         transition: all 0.3s ease-in-out;
         .mensaje{
             margin: 0px;
@@ -885,6 +1000,25 @@ body{
             margin-bottom: 0px;
             font-size: 0.5rem;
             color: black;
+        }
+    }
+    .container-buttons{
+        width: 100%;
+        height: 40px;
+        button{
+            width: 50%;
+            height: 100%;
+            border: none;
+            background-color: rgba(128, 128, 128, 0.4);
+            color: $color-tertiary;
+            transition: all 0.3s ease-in-out;
+        }
+        button:nth-child(2){
+            border-left: 0.5px solid $color-tertiary;
+        }
+        .btn-active{
+            background-color: rgba(128, 128, 128, 0.6);
+            transition: all 0.3s ease-in-out;
         }
     }
     .contact-container_div{
@@ -1343,9 +1477,10 @@ body{
 
     //contact styles
     .contact-container{
+        height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         gap: 5px;
         overflow: hidden;
         .alert-off{
@@ -1364,14 +1499,18 @@ body{
                 font-size: 0.9rem;
             }
         }
+        .container-buttons{
+            grid-column: 1 / span 4;
+            grid-row: 1;
+        }
         
         .contact-container_div{
-            grid-column: span 2;
-            grid-row: span 1;
+            grid-column: 1 / span 2;
+            grid-row: 2;
         }
         .form{
-            grid-column: span 2;
-            grid-row: 2;
+            grid-column: 1 / span 2;
+            grid-row: 3;
             .form_btn{
                 position: relative;
                 overflow-x: hidden;
@@ -1411,11 +1550,11 @@ body{
         }
         .contact-container_section{
             grid-column: 3;
-            grid-row: span 2;
+            grid-row: 2 / span 2;
         }
         .contact-container_aside{
-            grid-column: span 3;
-            grid-row: 3;
+            grid-column: 1 / span 3;
+            grid-row: 5;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
