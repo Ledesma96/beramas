@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { Inter } from 'next/font/google'
 import { Footer, NavBar, Wpp } from './components/index.js'
 import './globals.scss'
+import Script from 'next/script.js'
 
 
 
@@ -19,6 +20,19 @@ export default function RootLayout({ children }) {
       <head>
         <link rel='canonical' href='https://www.beramassillones.com/' key='canonical'></link>
         <link rel="preload"></link>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-1RFWNPLH2Q"
+        />
+
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-1RFWNPLH2Q');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <NavBar></NavBar>
