@@ -38,7 +38,7 @@ const Info = ({country}) => {
                                     <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
                                     <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
                                 </svg>
-                                <p className='contact-container_section_div_div_p'>Lunes a viernes 10.00 a 13.00 hs y 15.30 a 19.30. Sábado 10.00 a 13.00 hs y 15.30 a 19.00 hs</p>
+                                <p className='contact-container_section_div_div_p'>Lunes a viernes 10.00 a 19:00 hs. Sábados 10.00 a 14.00 hs</p>
                             </div>
                         </div>
                         <div className='contact-container_section_div'>
